@@ -1,22 +1,6 @@
-let year = parseInt(prompt("Enter a year"));
-let isLeapYear = false;
-
-let isDivisibleBy4 = year % 4 == 0;
-if (isDivisibleBy4) {
-  let isDivisibleBy100 = year % 100 == 0;
-  if (isDivisibleBy100) {
-    let isDivisibleBy400 = year % 400 == 0;
-    if (isDivisibleBy400) {
-      isLeapYear = true;
-    }
-  } else {
-    isLeapYear = true;
-  }
-}
-
-if (isLeapYear) {
-  alert(year + " is a leap year");
+let value = prompt('What is the "official" name of JavaScript?', '');
+if (value == 'ECMAScript') {
+  alert('Right!');
 } else {
-  alert(year + " is NOT a leap year");
+  alert("You don't know? ECMAScript!");
 }
-
